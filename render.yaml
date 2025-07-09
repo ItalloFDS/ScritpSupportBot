@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: chatgpt-discord-bot
+    env: python
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
